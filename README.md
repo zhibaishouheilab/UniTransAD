@@ -140,7 +140,37 @@ final_sample_dice_cycle_report.xlsx: (If --save_sample_dice=True) An Excel file 
 
 ## Results
 
-### Quantitative results
+### Quantitative Results
 
-### Qualitative results
-![Qualitative results](img/results.png) 
+UniTransAD achieves state-of-the-art performance on the Brain-OmniA benchmark, demonstrating superior generalization across multiple brain pathologies:
+
+| Model | BraTS2021 Dice↑ | MSLUB Dice↑ | ISLES2022 Dice↑ | WMH2017 Dice↑ | Avg. Dice↑ |
+|-------|----------------|-------------|-----------------|---------------|------------|
+| *Signal-intensity-based* |
+| Meissen et al. (Baseline) | 0.5939 | 0.3758 | 0.3729 | 0.3640 | 0.3660 |
+| *Reconstruction-based* |
+| DAE | 0.5342 | 0.1143 | 0.3129 | 0.1611 | 0.1969 |
+| f-AnoGAN | 0.5069 | 0.1025 | 0.2226 | 0.1649 | 0.1750 |
+| VAEGAN | 0.4255 | 0.1373 | 0.2495 | 0.2259 | 0.1885 |
+| *Cycle-translation-based* |
+| MetaAD | 0.6541 | 0.3622 | 0.3101 | 0.4597 | 0.3069 |
+| Cyclic-Unet | 0.5725 | 0.3023 | 0.2668 | 0.3640 | 0.2746 |
+| MMCCD | 0.6003 | 0.3170 | 0.2798 | 0.3817 | 0.2880 |
+| *Cross-translation-based* |
+| MT-Net | 0.5964 | **0.4660** | / | 0.3098 | 0.2866 |
+| MultiTransAD | 0.6615 | 0.4154 | 0.2673 | 0.4593 | 0.3330 |
+| *Ours (UniTransAD)* |
+| cross-trans | **0.6902** | 0.4335 | 0.4010 | 0.3865 | 0.3744 |
+| cycle-trans | 0.6790 | 0.4516 | **0.4352** | **0.4823** | **0.4105** |
+
+**Key Findings:**
+- **UniTransAD (cycle-trans)** achieves the highest average Dice score (**0.4105**), outperforming all competing methods
+- **State-of-the-art performance** on ISLES2022 (Dice: 0.4352) and WMH2017 (Dice: 0.4823) datasets
+- **Competitive performance** on BraTS2021 (Dice: 0.6902) and MSLUB (Dice: 0.4516)
+- **Robust generalization** across diverse brain pathologies including tumors, strokes, and white matter lesions
+
+### Qualitative Results
+
+![Qualitative results](img/results.png)
+
+The qualitative results demonstrate UniTransAD's ability to accurately localize diverse anomalies while maintaining low false positive rates, particularly in challenging cases with subtle pathological changes.
