@@ -119,24 +119,10 @@ python evaluate.py \
 
 ## Results
 UniTransAD achieves state-of-the-art performance on the Brain-OmniA benchmark:
-
-<style>
-.center 
-{
-  width: auto;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
-<div class="center">
-
 | Method | BraTS2021 | MSD | MSLUB | ISLES 2022 | WMH 2017 | BRISC | Avg. Dice |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | DAE | 0.5342 | 0.1427 | 0.1143 | 0.1465 | 0.1611 | 0.5197 | 0.2698 |
 | MetaAD | 0.6541 | 0.6624 | 0.3622 | 0.3101 | 0.4597 | 0.3612 | 0.4783 |
 | MultiTransAD | 0.6615 | 0.6698 | 0.4154 | 0.2673 | 0.4593 | - | 0.4909 |
 | **UniTransAD** | **0.7021** | **0.6965** | **0.5031** | **0.4658** | **0.5435** | **0.5659** | **0.5798** |
-</div>
-
 ![visualization results](./img/Figure_5.png)
