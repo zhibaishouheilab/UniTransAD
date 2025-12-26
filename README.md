@@ -125,4 +125,6 @@ UniTransAD achieves state-of-the-art performance on the Brain-OmniA benchmark:
 | MetaAD | 0.6541 | 0.6624 | 0.3622 | 0.3101 | 0.4597 | 0.3612 | 0.4783 |
 | MultiTransAD | 0.6615 | 0.6698 | 0.4154 | 0.2673 | 0.4593 | - | 0.4909 |
 | **UniTransAD** | **0.7021** | **0.6965** | **0.5031** | **0.4658** | **0.5435** | **0.5659** | **0.5798** |
+
+And the visualzition results:
 ![visualization results](./img/Figure_5.png)
