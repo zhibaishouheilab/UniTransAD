@@ -119,6 +119,7 @@ python evaluate.py \
 
 ## Results
 UniTransAD achieves state-of-the-art performance on the Brain-OmniA benchmark:
+
 <style>
 .center 
 {
@@ -128,8 +129,6 @@ UniTransAD achieves state-of-the-art performance on the Brain-OmniA benchmark:
   margin-right: auto;
 }
 </style>
-
-
 <div class="center">
 
 | Method | BraTS2021 | MSD | MSLUB | ISLES 2022 | WMH 2017 | BRISC | Avg. Dice |
